@@ -1,35 +1,83 @@
-<script type="text/javascript">
-    var urls = [
-        "http://www.kittenwar.com/",
-        'http://heeeeeeeey.com/',
-        'http://eelslap.com/',
-        'http://www.staggeringbeauty.com/',
-        'http://www.omfgdogs.com/',
-        'http://burymewithmymoney.com/',
-        'http://www.fallingfalling.com/',
-        'http://ducksarethebest.com/',
-        'http://www.republiquedesmangues.fr/',
-        'http://www.trypap.com/',
-        'http://www.hristu.net/',
-        'http://www.partridgegetslucky.com/',
-        'http://www.rrrgggbbb.com/',
-        'http://www.sanger.dk/',
-        'http://www.geodu.de/',
-        'http://beesbeesbees.com/',
-        'http://breakglasstosoundalarm.com/',
-        'http://www.koalastothemax.com/',
-        'http://grandpanoclothes.com/',
-        'http://www.everydayim.com/',
-        'http://www.haneke.net/',
-        'http://instantostrich.com/',
-        'http://r33b.net/',
-        'http://cat-bounce.com/'
-    ];
+ <!DOCTYPE html>
+<html>
+<head>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+            var urls = [
+                "http://www.kittenwar.com/",
+                'http://heeeeeeeey.com/',
+                'http://eelslap.com/',
+                'http://www.staggeringbeauty.com/',
+                'http://www.omfgdogs.com/',
+                'http://burymewithmymoney.com/',
+                'http://www.fallingfalling.com/',
+                'http://ducksarethebest.com/',
+                'http://www.republiquedesmangues.fr/',
+                'http://www.trypap.com/',
+                'http://www.hristu.net/',
+                'http://www.partridgegetslucky.com/',
+                'http://www.rrrgggbbb.com/',
+                'http://www.sanger.dk/',
+                'http://www.geodu.de/',
+                'http://beesbeesbees.com/',
+                'http://breakglasstosoundalarm.com/',
+                'http://www.koalastothemax.com/',
+                'http://grandpanoclothes.com/',
+                'http://www.everydayim.com/',
+                'http://www.haneke.net/',
+                'http://instantostrich.com/',
+                'http://r33b.net/',
+                'http://cat-bounce.com/'
+            ];
 
-    function goSomewhere() {
-        var url = urls[Math.floor(Math.random()*urls.length)];
-        window.location = url; // redirect
-    }
-</script>
+            function goSomewhere() {
+                var url = urls[Math.floor(Math.random()*urls.length)];
+                window.location = url; // redirect
+            }
+           
+        </script>
+        <style>
+            img.logo {
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                display: block;
+            }
+            body {
+                margin: 40px 0;
+                display: block;
+                background-color: #f3faff;
+            }
+            a.botom {
+                padding: 18px 25px;
+                background-color: #002B49;
+                color: #fff;
+                text-transform: uppercase; 
+                margin: 60px auto;
+                text-decoration:none;
+                font-family: arial;
+                display: block;
+                width: 180px;
+                text-align: center;
+                font-size: 20px;
+            }
+            a.botom:hover {
+                background-color: #003f6b;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <img class="logo" data-aos="fade-up" src="logo.png">
+        <div>
+          <a class="botom" data-aos="fade-up" data-aos-duration="300" href="#" onClick="goSomewhere(); return false;">Iniciar examen</a>
+        </div>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html> 
 
-<a href="#" onClick="goSomewhere(); return false;">Gimme something weird!</a>
+
